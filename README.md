@@ -14,7 +14,7 @@ Projeto em PHP criado para o teste do Processo Seletivo de Estágio da Azapfy
 	Ao todo o nosso projeto PHP (ControlePagamento.php) é composto por 9 funções, sendo elas:
   
 ### •	function printJson($url) – Recebe o endereço da API base e exibe a nova API.
-    	Exemplo:
+	Exemplo:
 	      Recebe: 
 	      url: “http://homologacao3.azapfy.com.br/api/ps/notas”
 	      Executa:
@@ -23,7 +23,7 @@ Projeto em PHP criado para o teste do Processo Seletivo de Estágio da Azapfy
 	      Exibe a nova estrutura da API, conforme mostrado na imagem anterior.
 
 ### •	function saveJsonFile($filename, $url) – Recebe o nome do arquivo e o endereço da API base, e salva a nova API em um .json com o nome informado.
-    	Exemplo:
+	Exemplo:
 	      Recebe:
 	      nome do arquivo: “notas”. 
 	      url: “http://homologacao3.azapfy.com.br/api/ps/notas”
@@ -33,7 +33,7 @@ Projeto em PHP criado para o teste do Processo Seletivo de Estágio da Azapfy
 	      Salva a nova estrutura da API em um arquivo de nome “notas.json”.
 
 ### •	function returnJson($url) – Recebe o endereço da API base e retorna a nova API.
-    	Exemplo:
+	Exemplo:
 	      Recebe:
 	      url: “http://homologacao3.azapfy.com.br/api/ps/notas”
 	      Executa:
@@ -42,7 +42,7 @@ Projeto em PHP criado para o teste do Processo Seletivo de Estágio da Azapfy
 	      Retorna a estrutura da nova API
 
 ### •	function createArray($data) – Recebe a API base decodificada e passa seus objetos para createNota e updateNota para gerar a nova estrutura dentro de um array.
-    	Exemplo:
+	Exemplo:
 	      Recebe:
 	      Data: API Decodificada
 	      Executa:
@@ -51,7 +51,7 @@ Projeto em PHP criado para o teste do Processo Seletivo de Estágio da Azapfy
 	      Retorna um array com a estrutura da nova API.
 
 ### •	function createNota($info) – Recebe um objeto dado por createArray e gera toda a estrutura do remetente.
-   	Exemplo:
+	Exemplo:
 	    Recebe:
 	    Info: Objeto vindo de $data
 	    Executa:
@@ -60,7 +60,7 @@ Projeto em PHP criado para o teste do Processo Seletivo de Estágio da Azapfy
 	    Retorna a estrutura do remetente já finalizada.
 
 ### •	function updateNota($info , $nota) – Recebe um objeto dado por createArray e adiciona uma nova nota que pertence a um  remetente que já existe.
-    	Exemplo:
+	Exemplo:
 	      Recebe:
 	      Info: Objeto vindo de $data.
 	      Executa:
@@ -69,7 +69,7 @@ Projeto em PHP criado para o teste do Processo Seletivo de Estágio da Azapfy
 	      Retorna a estrutura do remetente atualizada.
 
 ### •	function defineData($info) – Recebe um objeto vindo do defineNotaFiscal e verifica se deve retornar só a data de emissão ou a data de emissão e a de entrega.
-   	Exemplo:
+	Exemplo:
 	      Recebe:
 	      Info: Objeto vindo de $data.
 	      Executa:
@@ -78,7 +78,7 @@ Projeto em PHP criado para o teste do Processo Seletivo de Estágio da Azapfy
 	      Retorna a estrutura das datas que se encaixam na nota fiscal.
 
 ### •	function defineNotaFiscal($info) – Recebe um objeto vido de createNota e updateNota e gera a estrutura da nota fiscal.
-    	Exemplo:
+	Exemplo:
 	      Recebe:
 	      Info: Objeto vindo de $data.
 	      Executa:
@@ -87,7 +87,7 @@ Projeto em PHP criado para o teste do Processo Seletivo de Estágio da Azapfy
 	      Retorna a estrutura da nota fiscal.
 
 ### •	function calculeValores($info, $nota) – Recebe o objeto e o remetente e calcula os valores (total , entregue, pendente e perdido) e os volumes.
-    	Exemplo:
+	Exemplo:
 	      Recebe:
 	      Info: Objeto vindo de $data e nota: estrutura do remetente ao qual serão realizados os cálculos.
 	      Executa:
