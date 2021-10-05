@@ -6,7 +6,7 @@ Projeto em PHP criado para o teste do Processo Seletivo de Estágio da Azapfy
 # Documentação:
 ## Estrutura da API:
 	Para atender ao que foi proposto a estrutura da API foi construída da seguinte forma:
- 
+ <img src="https://github.com/matheustheus27/AzapfyTestePHP-API/blob/main/screenshots/estrutura.png" alt="Tela Inicial" width="200"/>
 	A estrutura foi construída de forma a ter como Chave o CNPJ do Remetente. Dentro da sua estrutura temos as informações referentes a esse remetente, sendo: nome, cnpj, notas, valor total das notas, volume total de mercadorias, valor a receber pelas entregas, volumes entregues, valor pendente (aguardando a entrega), volumes pendentes, valor perdido (quanto deixou de receber por atraso na entrega) e volume perdido.
 	Dentro da estrutura das notas temos as chaves dos serviços e dentro delas temos todos os dados referentes ao serviço. Sendo: numero do pedido, informações do destinatário (nome e código), informa da transportadora (nome e cnpj), data (data de emissão e entrega), status (comprovado ou em aberto), valor do serviço e quantidade de itens transportados.
   
@@ -96,4 +96,5 @@ Projeto em PHP criado para o teste do Processo Seletivo de Estágio da Azapfy
 	      Retorna a estrutura do remetente.
 
 Ao final obtemos a seguinte estrutura:
- 
+
+<img src="https://github.com/matheustheus27/AzapfyTestePHP-API/blob/main/screenshots/json.png" alt="Tela Inicial" width="200"/>
