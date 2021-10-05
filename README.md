@@ -99,3 +99,12 @@ Projeto em PHP criado para o teste do Processo Seletivo de Estágio da Azapfy
 Ao final obtemos a seguinte estrutura:
 
 <img src="https://github.com/matheustheus27/AzapfyTestePHP-API/blob/main/screenshots/json.png" alt="Tela Inicial" width="500" align ="center"/>
+
+## Execução:
+	A execução da estruturação da API deve ser executada em uma das funções abaixo:
+		•	printJson(url_API_Base) – Quando quiser exibir a estrutura da API.
+		•	saveJsonFile(nome_do_Arquivo, url_API_Base) – Quando quiser salvar a API em um arquivo.
+		•	returnJson(url_API_Base) – Quando quiser receber a estrutura da nova API e utiliza-la em outra composição de código.
+		
+	As três precisam receber como parâmetro a url da API base e a saveJsonFile deve receber também o nome do arquivo.
+
